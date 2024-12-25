@@ -1,7 +1,7 @@
 // Observe DOM changes to find the search field
 const observer = new MutationObserver(() => {
     const inputField = document.querySelector("input[id='ms-searchux-input']");
-    if (typeof inputField !== 'undefined' && inputField !== null)  {
+    if (inputField)  {
       console.log("Search field found:", inputField);
   
       // Stop observing once the element is found
