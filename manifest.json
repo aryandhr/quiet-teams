@@ -1,6 +1,6 @@
 {
-    "name": "Hello Extensions of the world!",
-    "description": "Base Level Extension",
+    "name": "Quiet Teams",
+    "description": "Be muted by default on Microsoft Teams.",
     "version": "1.0",
     "manifest_version": 3,
     "action": {
@@ -14,9 +14,6 @@
     },
     "permissions": ["scripting", "webNavigation"],
     "host_permissions": ["https://teams.microsoft.com/*"],
-    "background": {
-        "service_worker": "background.js"
-    },
     "content_scripts": [
     {
         "matches": ["https://teams.microsoft.com/*"],
